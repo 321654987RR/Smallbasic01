@@ -1,0 +1,31 @@
+TextWindow.WriteLine("This is a calculator")
+Begin:
+TextWindow.Clear()
+TextWindow.WriteLine("Enter the first number")
+TextWindow.Write(" ")
+num1=TextWindow.ReadNumber()
+'Choosing an operation
+TextWindow.WriteLine("Please choose an operation: +, -, /, *")
+TextWindow.Write(" ")
+calc=Textwindow.Read()
+'num2 input
+TextWindow.WriteLine("Please choose a second number")
+TextWindow.Write(" ")
+num2=Textwindow.ReadNumber()
+If (calc = "+") Then
+num3 = num1 + num2
+ElseIf (calc ="-") Then
+num3 = num1 - num2
+Elseif (calc ="/") Then
+num3 = num1 / num2
+Elseif (calc ="*") Then
+num3 = num1 * num2
+EndIf
+TextWindow.WriteLine(""+num1+" " +calc+" "+num2+ " = " +num3)
+'Restart Calculator IF
+TextWindow.WriteLine("Do you want to calculate something else? Y/N")
+TextWindow.Write(" ")
+name=Textwindow.Read()
+If name = "Y" Or name = "y" Then
+Goto Begin
+EndIf
