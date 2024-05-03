@@ -1,0 +1,21 @@
+GraphicsWindow.Width=250
+GraphicsWindow.Height=80
+GraphicsWindow.title="Small Basic Clock"
+GraphicsWindow.BackgroundColor="Black"
+GraphicsWindow.BrushColor="Green"
+'font oorchilno
+GraphicsWindow.FontName="Courier New"
+
+While "True"
+  Program.Delay(1000)
+  draw()
+EndWhile
+'tsagiig zurah
+Sub draw
+  GraphicsWindow.Clear()
+  GraphicsWindow.FontSize=40
+  GraphicsWindow.DrawText(0,10,Clock.time)
+  GraphicsWindow.DrawText(0,50,Clock.Date)
+  'geriin daalgavart on sar nemne
+  'clock.date
+  EndSub
